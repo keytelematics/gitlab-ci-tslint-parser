@@ -1,0 +1,114 @@
+[
+  {
+    "endPosition": {
+      "character": 24,
+      "line": 54,
+      "position": 1479
+    },
+    "failure": "'_id' is declared but its value is never read.",
+    "name": "/home/user/src/project/src/model/document/document.ts",
+    "ruleName": "no-unused-variable",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 21,
+      "line": 54,
+      "position": 1476
+    }
+  },
+  {
+    "endPosition": {
+      "character": 25,
+      "line": 55,
+      "position": 1514
+    },
+    "failure": "'_rev' is declared but its value is never read.",
+    "name": "/home/user/src/project/src/model/document/document.ts",
+    "ruleName": "no-unused-variable",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 21,
+      "line": 55,
+      "position": 1510
+    }
+  },
+  {
+    "endPosition": {
+      "character": 29,
+      "line": 126,
+      "position": 5045
+    },
+    "failure": "Found possible SQL injection",
+    "name": "/home/user/src/project/src/query.ts",
+    "ruleName": "tsr-detect-sql-literal-injection",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 33,
+      "line": 122,
+      "position": 4856
+    }
+  },
+  {
+    "endPosition": {
+      "character": 29,
+      "line": 135,
+      "position": 5553
+    },
+    "failure": "Found possible SQL injection",
+    "name": "/home/user/src/project/src/query.ts",
+    "ruleName": "tsr-detect-sql-literal-injection",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 33,
+      "line": 131,
+      "position": 5343
+    }
+  },
+  {
+    "endPosition": {
+      "character": 46,
+      "line": 185,
+      "position": 8918
+    },
+    "failure": "Found possible SQL injection",
+    "name": "/home/user/src/project/src/query.ts",
+    "ruleName": "tsr-detect-sql-literal-injection",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 44,
+      "line": 177,
+      "position": 8018
+    }
+  },
+  {
+    "endPosition": {
+      "character": 66,
+      "line": 108,
+      "position": 3796
+    },
+    "failure": "eval with argument of type BinaryExpression",
+    "name": "/home/user/src/project/src/mock/server.ts",
+    "ruleName": "tsr-detect-eval-with-expression",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 24,
+      "line": 108,
+      "position": 3754
+    }
+  },
+  {
+    "endPosition": {
+      "character": 28,
+      "line": 108,
+      "position": 3758
+    },
+    "failure": "forbidden eval",
+    "name": "/home/user/src/project/src/mock/server.ts",
+    "ruleName": "no-eval",
+    "ruleSeverity": "ERROR",
+    "startPosition": {
+      "character": 24,
+      "line": 108,
+      "position": 3754
+    }
+  }
+]

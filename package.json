@@ -1,0 +1,25 @@
+{
+  "name": "gitlab-ci-tslint-parser",
+  "version": "1.0.0",
+  "description": "Converts tslint output into GitLab SAST report format",
+  "bin": "parse.js",
+  "main": "parse.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:keytelematics/gitlab-ci-tslint-parser.git"
+  },
+  "keywords": [
+    "gitlab"
+  ],
+  "author": "Russell van der Walt",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.18.0"
+  }
+}
