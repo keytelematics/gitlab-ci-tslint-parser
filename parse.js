@@ -10,26 +10,20 @@ var chunks = [];
 
 program
   .version(version)
-  .option('-o, --out <path>', 'output filename, defaults to gl-dependency-scanning-report.json')
+  .option('-o, --out <path>', 'output filename, defaults to gl-sast-report.json')
   .parse(process.argv);
 
-var filename = program.out || 'gl-dependency-scanning-report.json';
+var filename = program.out || 'gl-sast-report.json';
 
-stdin.setEncoding('utf8');
+const inputJSON = fs.readFileSync("/dev/stdin", "utf-8");
+const outputJSON = convert(inputJSON);
 
-stdin.on('data', function (chunk) {
-  chunks.push(chunk);
+fs.writeFile(filename, outputJSON, function (err) {
+  if (err) {
+    return console.log(err);
+  }
+
+  console.log("The file was saved as " + filename + "!");
 });
 
-stdin.on('end', function () {
-  var inputJSON = chunks.join(),
-      outputJSON = convert(inputJSON);
 
-  fs.writeFile(filename, outputJSON, function(err) {
-    if (err) {
-      return console.log(err);
-    }
-
-    console.log("The file was saved as " + filename + "!");
-  });
-});

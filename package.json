@@ -1,6 +1,6 @@
 {
   "name": "gitlab-ci-tslint-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts tslint output into GitLab SAST report format",
   "bin": "parse.js",
   "main": "parse.js",
